@@ -3,46 +3,46 @@
    Design system + slides
    ───────────────────────────────────────────────────────────────── */
 
-/* ───── Tokens — Vercel-inspired ─────────────────────────────── */
+/* ───── Tokens — Vercel × Cursor blend ───────────────────────── */
 :root {
-  /* Palette — white precision, near-black ink */
-  --paper: #ffffff;
-  --paper-2: #fafafa;
+  /* Palette — Cursor cream warmth on Vercel white precision */
+  --paper: #f2f1ed;
+  --paper-2: #ebeae5;
   --surface: #ffffff;
-  --surface-2: #fafafa;
-  --ink: #171717;
-  --ink-2: #4d4d4d;
-  --ink-3: #666666;
-  --ink-4: #808080;
-  --ink-5: #ebebeb;
-  --line: rgba(0, 0, 0, 0.08);
-  --line-2: rgba(0, 0, 0, 0.12);
-  --line-strong: rgba(0, 0, 0, 0.20);
+  --surface-2: #f7f7f4;
+  --ink: #26251e;
+  --ink-2: rgba(38, 37, 30, 0.75);
+  --ink-3: rgba(38, 37, 30, 0.55);
+  --ink-4: rgba(38, 37, 30, 0.40);
+  --ink-5: #e6e5e0;
+  --line: rgba(38, 37, 30, 0.10);
+  --line-2: rgba(38, 37, 30, 0.20);
+  --line-strong: rgba(38, 37, 30, 0.55);
 
-  /* Accent — monochrome black */
-  --accent: #171717;
-  --accent-deep: #000000;
-  --accent-soft: rgba(0, 0, 0, 0.04);
-  --accent-soft-2: rgba(0, 0, 0, 0.08);
-  --accent-line: rgba(0, 0, 0, 0.16);
+  /* Accent — Cursor orange */
+  --accent: #f54e00;
+  --accent-deep: #d94000;
+  --accent-soft: rgba(245, 78, 0, 0.07);
+  --accent-soft-2: rgba(245, 78, 0, 0.14);
+  --accent-line: rgba(245, 78, 0, 0.30);
 
-  /* Type — Geist */
+  /* Type — Geist (Vercel) + Fraunces */
   --serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
   --sans: "Geist", system-ui, -apple-system, Arial, sans-serif;
   --mono: "Geist Mono", ui-monospace, "Roboto Mono", Menlo, monospace;
 
-  /* Shadows — Vercel ring style */
-  --shadow-xs: rgba(0,0,0,0.06) 0px 0px 0px 1px;
-  --shadow-sm: rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 4px 0px;
-  --shadow-md: rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 4px 0px, rgba(0,0,0,0.06) 0px 8px 16px -4px;
-  --shadow-lg: rgba(0,0,0,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.06) 0px 4px 8px 0px, rgba(0,0,0,0.10) 0px 24px 48px -8px;
+  /* Shadows — Vercel ring base, Cursor depth on hover */
+  --shadow-xs: rgba(38,37,30,0.06) 0px 0px 0px 1px;
+  --shadow-sm: rgba(38,37,30,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 4px 0px;
+  --shadow-md: rgba(38,37,30,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.06) 0px 4px 12px 0px, rgba(0,0,0,0.04) 0px 8px 24px -4px;
+  --shadow-lg: rgba(0,0,0,0.14) 0px 28px 70px 0px, rgba(0,0,0,0.10) 0px 14px 32px 0px, rgba(38,37,30,0.10) 0px 0px 0px 1px;
 
   /* Motion */
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 
-  /* Radii — tighter Vercel style */
+  /* Radii — shared 8px core */
   --r-xs: 4px;
   --r-sm: 6px;
   --r-md: 8px;
@@ -109,9 +109,9 @@ html, body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: saturate(120%) blur(12px);
-  -webkit-backdrop-filter: saturate(120%) blur(12px);
+  background: rgba(242, 241, 237, 0.88);
+  backdrop-filter: saturate(140%) blur(12px);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
   z-index: 10;
 }
 
@@ -173,7 +173,7 @@ html, body {
   color: var(--paper);
 }
 .section-btn.is-active .section-btn__num {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(242, 241, 237, 0.6);
 }
 
 .top-nav__meta {
@@ -217,7 +217,7 @@ html, body {
 .progress__fill {
   position: absolute;
   left: 0; top: 0; bottom: 0;
-  background: var(--ink);
+  background: var(--accent);
   width: calc(var(--p, 0.077) * 100%);
   transition: width 600ms var(--ease);
 }
@@ -1700,9 +1700,9 @@ body[data-no-anim] .slide:not(.is-active) { display: none; }
     position: fixed;
     bottom: 0; left: 0; right: 0;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: saturate(120%) blur(12px);
-    -webkit-backdrop-filter: saturate(120%) blur(12px);
+    background: rgba(242, 241, 237, 0.96);
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
     border-top: 1px solid var(--line);
     padding: 10px 20px;
     gap: 14px;
