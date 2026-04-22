@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Transformation Programme — Leadership Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="deck" id="deck" data-slide-index="0">
+
+      <!-- ───────────────────────────────────── TOP NAV ──────────────────────── -->
+      <header class="top-nav" aria-label="Deck navigation">
+        <div class="top-nav__brand">
+          <span class="top-nav__mark" aria-hidden="true"></span>
+          <span class="top-nav__label">AI Programme <span class="top-nav__dot">·</span> Internal Leadership</span>
+        </div>
+        <nav class="sections" aria-label="Sections">
+          <button class="section-btn" data-section="context" data-jump="1">
+            <span class="section-btn__num">01</span>
+            <span class="section-btn__name">Context</span>
+          </button>
+          <button class="section-btn" data-section="programme" data-jump="4">
+            <span class="section-btn__num">02</span>
+            <span class="section-btn__name">Programme</span>
+          </button>
+          <button class="section-btn" data-section="execution" data-jump="9">
+            <span class="section-btn__num">03</span>
+            <span class="section-btn__name">Execution</span>
+          </button>
+          <button class="section-btn" data-section="outcomes" data-jump="11">
+            <span class="section-btn__num">04</span>
+            <span class="section-btn__name">Outcomes</span>
+          </button>
+        </nav>
+        <div class="top-nav__meta">
+          <button class="nav-caret" data-action="prev" aria-label="Previous slide">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <span class="counter">
+            <span id="slide-num">01</span>
+            <span class="counter__sep">/</span>
+            <span id="slide-total">13</span>
+          </span>
+          <button class="nav-caret" data-action="next" aria-label="Next slide">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Progress rail -->
+      <div class="progress" aria-hidden="true">
+        <div class="progress__fill" id="progress-fill"></div>
+      </div>
+
+      <!-- ───────────────────────────────────── SLIDES ───────────────────────── -->
+      <main class="slides" id="slides">
+
+        <!-- ═══ SLIDE 1 — Title / Framing ═══ -->
+        <section class="slide slide--title" data-slide="1" data-section="context">
+          <div class="slide__inner title">
+            <div class="title__row-top">
+              <span class="eyebrow">Internal · First-cut framing</span>
+            </div>
+            <h1 class="title__headline">
+              <span class="reveal" style="--d: 0ms">AI Experience &amp;</span>
+              <span class="reveal" style="--d: 80ms"><em>Enablement</em></span>
+              <span class="reveal" style="--d: 160ms">Program.</span>
+            </h1>
+            <p class="title__sub reveal" style="--d: 320ms">
+              A practical first-cut programme to align AI ways of working, build capability, and test the future model in live work.
+            </p>
+            <div class="title__footer">
+              <div class="title__meta-col reveal" style="--d: 440ms">
+                <span class="micro">Origin</span>
+                <span class="title__name">CEED-initiated</span>
+              </div>
+              <div class="title__meta-col reveal" style="--d: 480ms">
+                <span class="micro">Participation</span>
+                <span class="title__name">Selected adjacent</span>
+              </div>
+              <div class="title__meta-col reveal" style="--d: 520ms">
+                <span class="micro">April 2026</span>
+                <span class="title__name">Draft · v0.1</span>
+              </div>
+              <button class="begin reveal" data-action="next" style="--d: 620ms">
+                <span>Begin</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 2 — Why now ═══ -->
+        <section class="slide slide--why" data-slide="2" data-section="context">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">01 · Context</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                <em>Why</em> now.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                AI is already changing two things at the same time — <em>what we build</em> and <em>how we work</em>. If we don&rsquo;t get ahead of it, three things are likely to happen.
+              </p>
+            </header>
+            <div class="pillars">
+              <article class="pillar reveal" style="--d: 360ms">
+                <span class="pillar__num">01</span>
+                <h3 class="pillar__title">Local &amp; out of sync</h3>
+                <p class="pillar__body">Workflow optimisation happens locally and out of sync across teams.</p>
+              </article>
+              <article class="pillar reveal" style="--d: 420ms">
+                <span class="pillar__num">02</span>
+                <h3 class="pillar__title">Experiences drift</h3>
+                <p class="pillar__body">AI experiences drift apart across products and touchpoints — quality and context handling stop matching.</p>
+              </article>
+              <article class="pillar reveal" style="--d: 480ms">
+                <span class="pillar__num">03</span>
+                <h3 class="pillar__title">Others set the shape</h3>
+                <p class="pillar__body">Adjacent functions end up defining the future way of working for us.</p>
+              </article>
+              <article class="pillar reveal" style="--d: 540ms">
+                <span class="pillar__num">04</span>
+                <h3 class="pillar__title">Surfaces multiply</h3>
+                <p class="pillar__body">More AI-enabled surfaces, interfaces and interaction points are coming. Without shared patterns, they drift early and become harder to reconnect later.</p>
+              </article>
+            </div>
+            <footer class="why__footer reveal" style="--d: 620ms">
+              <span class="micro">Bottom line · we need a practical model that helps us align, build capability, and learn through real work.</span>
+            </footer>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 3 — The two shifts ═══ -->
+        <section class="slide slide--tension" data-slide="3" data-section="context">
+          <div class="slide__inner">
+            <header class="slide-head slide-head--center">
+              <span class="eyebrow reveal" style="--d: 0ms">01 · Context</span>
+              <h2 class="statement statement--center reveal" style="--d: 120ms">
+                The problem is <em>two shifts</em> at once.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                One reshapes what we build. The other reshapes how we work. The programme has to address both.
+              </p>
+            </header>
+            <div class="tension" role="group" aria-label="Two shifts">
+              <div class="tension__side tension__side--left reveal" style="--d: 400ms" data-side="a">
+                <span class="tension__label">Shift 01</span>
+                <h3 class="tension__title">AI-enabled experiences</h3>
+                <p class="tension__body">What we build is changing — interfaces that are <em>context-aware</em>, with AI running inside them.</p>
+                <ul class="tension__list">
+                  <li>Automation</li>
+                  <li>Orchestration</li>
+                  <li>Human oversight</li>
+                  <li>Context-aware interfaces</li>
+                </ul>
+              </div>
+              <div class="tension__axis" aria-hidden="true">
+                <span class="tension__axis-line"></span>
+                <span class="tension__axis-glyph">/</span>
+                <span class="tension__axis-line"></span>
+              </div>
+              <div class="tension__side tension__side--right reveal" style="--d: 480ms" data-side="b">
+                <span class="tension__label">Shift 02</span>
+                <h3 class="tension__title">AI-assisted ways of working</h3>
+                <p class="tension__body">How we work is changing — new handoffs, faster cycles, and the <em>shape of roles</em> compressing and shifting.</p>
+                <ul class="tension__list">
+                  <li>New handoffs</li>
+                  <li>Faster cycles</li>
+                  <li>Role compression</li>
+                  <li>Role change</li>
+                </ul>
+              </div>
+            </div>
+            <footer class="tension__footer reveal" style="--d: 640ms">
+              <span class="micro">This needs to address both customer-facing AI quality and internal AI-enabled practice.</span>
+            </footer>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 4 — Programme overview ═══ -->
+        <section class="slide slide--overview" data-slide="4" data-section="programme">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">02 · Programme</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                The programme has <em>three legs</em>.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                These three legs should reinforce each other, not run as separate tracks.
+              </p>
+            </header>
+            <div class="legs" role="list">
+              <div class="leg-card is-open reveal" data-leg="group" style="--d: 360ms" role="listitem">
+                <div class="leg-card__top">
+                  <span class="leg-card__num">01</span>
+                  <span class="leg-card__tag">Leg</span>
+                </div>
+                <h3 class="leg-card__title">AI Experience &amp; Enablement Group</h3>
+                <p class="leg-card__tagline">Small cross-functional group to clarify what good looks like and where alignment is needed.</p>
+                <div class="leg-card__fold">
+                  <dl class="leg-card__facts">
+                    <div><dt>Origin</dt><dd>CEED-initiated, with selected adjacent participation</dd></div>
+                    <div><dt>Shape</dt><dd>Small working group, cross-functional</dd></div>
+                    <div><dt>Focus</dt><dd>Compare, clarify, reduce drift early</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="leg-card is-open reveal" data-leg="bootcamp" style="--d: 440ms" role="listitem">
+                <div class="leg-card__top">
+                  <span class="leg-card__num">02</span>
+                  <span class="leg-card__tag">Leg</span>
+                </div>
+                <h3 class="leg-card__title">Bootcamp / Readiness Track</h3>
+                <p class="leg-card__tagline">Practical CEED UX uplift to create movement, common baseline, and identify the advanced bench.</p>
+                <div class="leg-card__fold">
+                  <dl class="leg-card__facts">
+                    <div><dt>Audience</dt><dd>First version aimed at CEED UX</dd></div>
+                    <div><dt>Length</dt><dd>~4–6 weeks, short and practical</dd></div>
+                    <div><dt>Format</dt><dd>Live sessions + self-study + hands-on + real cases</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="leg-card is-open reveal" data-leg="pods" style="--d: 520ms" role="listitem">
+                <div class="leg-card__top">
+                  <span class="leg-card__num">03</span>
+                  <span class="leg-card__tag">Leg</span>
+                </div>
+                <h3 class="leg-card__title">Applied Pods / Pilots</h3>
+                <p class="leg-card__tagline">Live examples where the model is tested in real work.</p>
+                <div class="leg-card__fold">
+                  <dl class="leg-card__facts">
+                    <div><dt>Shape</dt><dd>Work close to the real problem</dd></div>
+                    <div><dt>Constraints</dt><dd>Real data and APIs where possible</dd></div>
+                    <div><dt>Aim</dt><dd>A working validated version others can learn from</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <footer class="legs__footer reveal" style="--d: 620ms">
+              <span class="micro">These three legs should reinforce each other, not run as separate tracks.</span>
+            </footer>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 5 — Leg 1: Experience & Enablement Group ═══ -->
+        <section class="slide slide--leg" data-slide="5" data-section="programme" data-leg-slide="group">
+          <div class="slide__inner">
+            <header class="slide-head slide-head--leg">
+              <span class="eyebrow reveal" style="--d: 0ms">02 · Programme <span class="top-nav__dot">·</span> Leg 01</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                AI Experience &amp; <em>Enablement Group</em>
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                A small working group to compare what is already happening, clarify what good looks like, and reduce drift early.
+              </p>
+            </header>
+            <div class="leg-layout">
+              <aside class="leg-layout__left reveal" style="--d: 380ms">
+                <div class="leg-purpose">
+                  <span class="micro">Purpose</span>
+                  <p>Compare what&rsquo;s already happening, clarify what <em>good</em> looks like, and reduce drift early.</p>
+                </div>
+                <div class="leg-stats">
+                  <div class="stat">
+                    <span class="stat__label">Origin</span>
+                    <span class="stat__value">CEED-initiated</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Shape</span>
+                    <span class="stat__value">Cross-functional</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Size</span>
+                    <span class="stat__value">Small &amp; selected</span>
+                  </div>
+                </div>
+              </aside>
+              <div class="leg-layout__right reveal" style="--d: 460ms">
+                <div class="tabs" data-tabs>
+                  <div class="tabs__list" role="tablist">
+                    <button class="tab is-active" role="tab" data-tab="scope">Aligns</button>
+                    <button class="tab" role="tab" data-tab="who">Membership</button>
+                    <button class="tab" role="tab" data-tab="rhythm">vs. AI Chapter</button>
+                    <button class="tab" role="tab" data-tab="signal">Outcome</button>
+                    <span class="tabs__indicator" aria-hidden="true"></span>
+                  </div>
+                  <div class="tabs__panels">
+                    <div class="tab-panel is-active" data-panel="scope">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>AI-enabled ways of working.</li>
+                        <li><span class="bullet">—</span>Customer-facing AI patterns and quality.</li>
+                        <li><span class="bullet">—</span>Response quality and contextual coherence across touchpoints.</li>
+                        <li><span class="bullet">—</span>Where agentic thinking makes sense — and where it does not.</li>
+                        <li><span class="bullet">—</span>Shared principles, examples, and likely pilot areas.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="who">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>CEED-initiated — core: Design, Product, Engineering / Architecture.</li>
+                        <li><span class="bullet">—</span>Selected adjacent: likely Ocean and L&amp;S representatives where workflow, handoff, or customer surface area overlaps.</li>
+                        <li><span class="bullet">—</span>Small and curated — not a broad community at the start.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="rhythm">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>Leaders will ask how the Enablement Group relates to a potential AI UX Chapter. The short answer: they are different things and not alternatives to each other.</li>
+                        <li><span class="bullet">—</span>An AI UX Chapter is a design-led community that shapes UX vision, craft standards and maturity — it operates within the design function.</li>
+                        <li><span class="bullet">—</span>The Group is the cross-functional practical layer where design, product and engineering align on what good looks like in shipped work — it cannot live inside one function.</li>
+                        <li><span class="bullet">—</span>Both can exist. Worth agreeing how they sit next to each other before the Group runs its first session.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="signal">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>A small, trusted group.</li>
+                        <li><span class="bullet">—</span>The place where AI practice gets compared and sharpened.</li>
+                        <li><span class="bullet">—</span>Discussion turned into action.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 6 — Leg 2: Bootcamp ═══ -->
+        <section class="slide slide--leg" data-slide="6" data-section="programme" data-leg-slide="bootcamp">
+          <div class="slide__inner">
+            <header class="slide-head slide-head--leg">
+              <span class="eyebrow reveal" style="--d: 0ms">02 · Programme <span class="top-nav__dot">·</span> Leg 02</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                Bootcamp / <em>Readiness Track</em>
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                Help the CEED UX organisation move in a practical way, not just talk about the future.
+              </p>
+            </header>
+            <div class="leg-layout">
+              <aside class="leg-layout__left reveal" style="--d: 380ms">
+                <div class="leg-purpose">
+                  <span class="micro">Purpose</span>
+                  <p>Move the CEED UX org in a <em>practical</em> way — not just talk about the future.</p>
+                </div>
+                <div class="leg-stats">
+                  <div class="stat">
+                    <span class="stat__label">Audience</span>
+                    <span class="stat__value">CEED UX first</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Length</span>
+                    <span class="stat__value">~4–6 weeks</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Format</span>
+                    <span class="stat__value">Short &amp; practical</span>
+                  </div>
+                </div>
+              </aside>
+              <div class="leg-layout__right reveal" style="--d: 460ms">
+                <div class="tabs" data-tabs>
+                  <div class="tabs__list" role="tablist">
+                    <button class="tab is-active" role="tab" data-tab="scope">What it does</button>
+                    <button class="tab" role="tab" data-tab="who">Shape</button>
+                    <button class="tab" role="tab" data-tab="rhythm">Audience</button>
+                    <button class="tab" role="tab" data-tab="tracks">Tracks</button>
+                    <button class="tab" role="tab" data-tab="signal">Outcome</button>
+                    <span class="tabs__indicator" aria-hidden="true"></span>
+                  </div>
+                  <div class="tabs__panels">
+                    <div class="tab-panel is-active" data-panel="scope">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>Create a stronger common baseline.</li>
+                        <li><span class="bullet">—</span>Make readiness more visible.</li>
+                        <li><span class="bullet">—</span>Identify who is moving and how fast.</li>
+                        <li><span class="bullet">—</span>Help surface the smaller advanced bench.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="who">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>Short and practical — around 4–6 weeks.</li>
+                        <li><span class="bullet">—</span>Live sessions + self-study.</li>
+                        <li><span class="bullet">—</span>Hands-on exercises — participants build or test something.</li>
+                        <li><span class="bullet">—</span>Real cases tied to live Maersk work where possible.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="rhythm">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>First version aimed at CEED UX.</li>
+                        <li><span class="bullet">—</span>Creates movement across the wider CEED UX group.</li>
+                        <li><span class="bullet">—</span>Helps identify the smaller bench ready for the next level.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="tracks">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span><strong>Broad group</strong> — AI literacy, workflow thinking, systems awareness, practical tool &amp; prompt fluency, and understanding where AI changes their role and where it does not.</li>
+                        <li><span class="bullet">—</span><strong>Smaller advanced group</strong> — system &amp; workflow shaping, building / testing / shipping more directly, trust / governance / oversight, tooling &amp; design-system evolution.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="signal">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>A practical readiness model in place.</li>
+                        <li><span class="bullet">—</span>Wider CEED UX group visibly moving.</li>
+                        <li><span class="bullet">—</span>A clearer picture of the advanced bench — and readiness for pods.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 7 — Leg 3: Applied Pods ═══ -->
+        <section class="slide slide--leg" data-slide="7" data-section="programme" data-leg-slide="pods">
+          <div class="slide__inner">
+            <header class="slide-head slide-head--leg">
+              <span class="eyebrow reveal" style="--d: 0ms">02 · Programme <span class="top-nav__dot">·</span> Leg 03</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                Applied <em>Pods</em> / Pilots
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                Take the ideas out of the room and prove them in real work.
+              </p>
+            </header>
+            <div class="leg-layout">
+              <aside class="leg-layout__left reveal" style="--d: 380ms">
+                <div class="leg-purpose">
+                  <span class="micro">Purpose</span>
+                  <p>Prove the model in <em>real work</em>. Without this leg, the Group stays discussion, the Bootcamp stays training, and future roles stay abstract.</p>
+                </div>
+                <div class="leg-stats">
+                  <div class="stat">
+                    <span class="stat__label">Team</span>
+                    <span class="stat__value">Design · Product · Eng</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Work</span>
+                    <span class="stat__value">Real problems</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Constraints</span>
+                    <span class="stat__value">Real data &amp; APIs</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat__label">Aim</span>
+                    <span class="stat__value">Working version</span>
+                  </div>
+                </div>
+              </aside>
+              <div class="leg-layout__right reveal" style="--d: 460ms">
+                <div class="tabs" data-tabs>
+                  <div class="tabs__list" role="tablist">
+                    <button class="tab is-active" role="tab" data-tab="scope">What pods do</button>
+                    <button class="tab" role="tab" data-tab="who">Why it matters</button>
+                    <button class="tab" role="tab" data-tab="rhythm">Starting points</button>
+                    <button class="tab" role="tab" data-tab="signal">Note</button>
+                    <span class="tabs__indicator" aria-hidden="true"></span>
+                  </div>
+                  <div class="tabs__panels">
+                    <div class="tab-panel is-active" data-panel="scope">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>Work close to the real problem.</li>
+                        <li><span class="bullet">—</span>Use real constraints, data and APIs where possible.</li>
+                        <li><span class="bullet">—</span>Aim for a working, validated version.</li>
+                        <li><span class="bullet">—</span>Create examples others can learn from.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="who">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>Without it, the Group stays discussion.</li>
+                        <li><span class="bullet">—</span>Without it, the Bootcamp stays training.</li>
+                        <li><span class="bullet">—</span>Without it, future roles stay abstract.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="rhythm">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>AI CE Big Bet.</li>
+                        <li><span class="bullet">—</span>SFDC Seismic 90-day POC.</li>
+                        <li><span class="bullet">—</span>Lumina intake agents.</li>
+                        <li><span class="bullet">—</span>AI Hub.</li>
+                      </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="signal">
+                      <ul class="tab-list">
+                        <li><span class="bullet">—</span>These are useful anchor points, not an exhaustive list.</li>
+                        <li><span class="bullet">—</span>Other initiatives already in motion may prove equally or more suitable.</li>
+                        <li><span class="bullet">—</span>Emerging work over the coming months may surface better candidates.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 8 — How the three legs reinforce ═══ -->
+        <section class="slide slide--triangle" data-slide="8" data-section="programme">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">02 · Programme</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                How the model <em>compounds</em>.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                A short learning loop between alignment, capability and application. <span class="hover-hint">Hover a node or edge to see the mechanism.</span>
+              </p>
+            </header>
+            <div class="triangle-wrap">
+              <div class="triangle reveal" style="--d: 380ms" data-triangle>
+                <svg viewBox="0 0 480 360" class="triangle__svg" aria-hidden="true">
+                  <line class="edge" data-edge="group-bootcamp" x1="240" y1="70" x2="90" y2="300" />
+                  <line class="edge" data-edge="group-pods" x1="240" y1="70" x2="390" y2="300" />
+                  <line class="edge" data-edge="bootcamp-pods" x1="90" y1="300" x2="390" y2="300" />
+                  <line class="edge-hit" data-edge="group-bootcamp" x1="240" y1="70" x2="90" y2="300" />
+                  <line class="edge-hit" data-edge="group-pods" x1="240" y1="70" x2="390" y2="300" />
+                  <line class="edge-hit" data-edge="bootcamp-pods" x1="90" y1="300" x2="390" y2="300" />
+                </svg>
+                <button class="node node--top" data-node="group" style="--x: 240px; --y: 70px">
+                  <span class="node__dot"></span>
+                  <span class="node__num">01</span>
+                  <span class="node__label">Enablement Group</span>
+                </button>
+                <button class="node node--left" data-node="bootcamp" style="--x: 90px; --y: 300px">
+                  <span class="node__dot"></span>
+                  <span class="node__num">02</span>
+                  <span class="node__label">Bootcamp</span>
+                </button>
+                <button class="node node--right" data-node="pods" style="--x: 390px; --y: 300px">
+                  <span class="node__dot"></span>
+                  <span class="node__num">03</span>
+                  <span class="node__label">Applied Pods</span>
+                </button>
+              </div>
+              <aside class="triangle__panel reveal" style="--d: 520ms" id="triangle-panel">
+                <span class="micro" id="tp-kicker">Hover any node or edge</span>
+                <h4 class="triangle__panel-title" id="tp-title">A short learning loop.</h4>
+                <p class="triangle__panel-body" id="tp-body">
+                  Alignment, capability and application feeding each other — so the programme compounds instead of running as three separate tracks.
+                </p>
+                <dl class="triangle__legend">
+                  <div><dt>01 → 02</dt><dd>Surfaces what the baseline should include and where the gaps are.</dd></div>
+                  <div><dt>02 → 03</dt><dd>Identifies who&rsquo;s ready to go deeper before pods start.</dd></div>
+                  <div><dt>03 → 01</dt><dd>Real examples, real blockers — sharpens what good looks like.</dd></div>
+                </dl>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 9 — LearningPath ═══ -->
+        <section class="slide slide--lp" data-slide="9" data-section="execution">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">03 · Execution</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                <em>LearningPath</em> as supporting infrastructure.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                Not the answer in itself, but a useful role in the readiness layer — making the transition more tangible, visible, and fair.
+              </p>
+            </header>
+            <div class="lp-diagram reveal" style="--d: 400ms" data-lp>
+              <div class="lp-row lp-row--legs">
+                <div class="lp-box" data-lp-leg="group">
+                  <span class="lp-box__num">01</span>
+                  <span class="lp-box__title">Enablement Group</span>
+                </div>
+                <div class="lp-box" data-lp-leg="bootcamp">
+                  <span class="lp-box__num">02</span>
+                  <span class="lp-box__title">Bootcamp</span>
+                </div>
+                <div class="lp-box" data-lp-leg="pods">
+                  <span class="lp-box__num">03</span>
+                  <span class="lp-box__title">Applied Pods</span>
+                </div>
+              </div>
+              <div class="lp-arrows" aria-hidden="true">
+                <span class="lp-arrow"></span>
+                <span class="lp-arrow"></span>
+                <span class="lp-arrow"></span>
+              </div>
+              <div class="lp-row lp-row--platform">
+                <div class="lp-platform">
+                  <span class="micro">Readiness layer</span>
+                  <h3 class="lp-platform__title">LearningPath</h3>
+                  <div class="lp-services">
+                    <span class="lp-service" data-service="self">Self-assessment</span>
+                    <span class="lp-service" data-service="manager">Manager assessment</span>
+                    <span class="lp-service" data-service="gaps">Gap visibility</span>
+                    <span class="lp-service" data-service="tracks">Suggested tracks</span>
+                    <span class="lp-service" data-service="levels">Baseline vs. advanced</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="lp-footer reveal" style="--d: 560ms">
+              <span class="micro">Next · a dedicated session on how LearningPath could support this programme in practice.</span>
+            </footer>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 10 — First phase ═══ -->
+        <section class="slide slide--timeline" data-slide="10" data-section="execution">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">03 · Execution</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                What the <em>first phase</em> could look like.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                Sequenced to shape the model with real work, not in the abstract.
+              </p>
+            </header>
+            <div class="timeline reveal" style="--d: 400ms" data-timeline>
+              <div class="timeline__rail">
+                <div class="timeline__progress" id="timeline-progress"></div>
+                <div class="timeline__ticks">
+                  <span>Start</span>
+                  <span>Month 1</span>
+                  <span>Month 2</span>
+                  <span>Month 3+</span>
+                </div>
+              </div>
+              <div class="phases">
+                <div class="phase" data-phase="1">
+                  <div class="phase__head">
+                    <span class="phase__num">Month 01</span>
+                    <span class="phase__range">Shape</span>
+                  </div>
+                  <h3 class="phase__title">Form &amp; frame</h3>
+                  <p class="phase__tagline">Set the working shape before running anything.</p>
+                  <div class="phase__fold">
+                    <ul class="phase__list">
+                      <li>Form the AI Experience &amp; Enablement Group</li>
+                      <li>Run a short signal-mapping survey before the first Group session — what work is in motion, where blockers keep showing up, where alignment feels most needed</li>
+                      <li>Identify what good looks like at a very early level</li>
+                      <li>Shape the first version of the Bootcamp</li>
+                      <li>Identify pilot candidates</li>
+                      <li>Name the first practical outputs: 3–5 principles, 1 Bootcamp outline, 1 readiness lens, 1–2 pod pilots</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="phase" data-phase="2">
+                  <div class="phase__head">
+                    <span class="phase__num">Month 02</span>
+                    <span class="phase__range">Run</span>
+                  </div>
+                  <h3 class="phase__title">Stand up &amp; test</h3>
+                  <p class="phase__tagline">Put weight on the model in practice.</p>
+                  <div class="phase__fold">
+                    <ul class="phase__list">
+                      <li>Run the first Group sessions</li>
+                      <li>Lock the first Bootcamp shape</li>
+                      <li>Identify first participants and readiness signals</li>
+                      <li>Stand up the first pod / pilot where timing allows</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="phase" data-phase="3">
+                  <div class="phase__head">
+                    <span class="phase__num">Month 03+</span>
+                    <span class="phase__range">Refine</span>
+                  </div>
+                  <h3 class="phase__title">Learn &amp; refine</h3>
+                  <p class="phase__tagline">Let real evidence reshape the model.</p>
+                  <div class="phase__fold">
+                    <ul class="phase__list">
+                      <li>Continue the Group as practical alignment layer</li>
+                      <li>Run or test the first Bootcamp version</li>
+                      <li>Capture lessons from pods</li>
+                      <li>Refine what good looks like based on actual evidence</li>
+                      <li>Keep guardrails active — Group stays small, one pilot at a time, loops stay short, relevance over representation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 11 — Success ═══ -->
+        <section class="slide slide--success" data-slide="11" data-section="outcomes">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">04 · Outcomes</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                What <em>success</em> looks like.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                Two views — what the programme delivers across the org, and the smaller signals that tell us the model is working.
+              </p>
+            </header>
+            <div class="success reveal" style="--d: 400ms" data-success>
+              <div class="segmented">
+                <button class="seg is-active" data-seg="programme">Across the programme</button>
+                <button class="seg" data-seg="signal">Signal the model is working</button>
+                <span class="segmented__thumb" aria-hidden="true"></span>
+              </div>
+              <div class="success__panels">
+                <div class="success__panel is-active" data-panel="programme">
+                  <div class="metrics">
+                    <article class="metric">
+                      <span class="metric__label">Shared language</span>
+                      <h4 class="metric__headline">Alignment across functions</h4>
+                      <p class="metric__body">More shared language across design, product and engineering — less duplicated local optimisation.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Experience</span>
+                      <h4 class="metric__headline">Coherent AI-enabled experiences</h4>
+                      <p class="metric__body">More coherence in how AI shows up across products and touchpoints.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Readiness</span>
+                      <h4 class="metric__headline">A clearer baseline</h4>
+                      <p class="metric__body">A clearer baseline for AI readiness, and a better view of who can move into advanced tracks.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Evidence</span>
+                      <h4 class="metric__headline">Shared foundations</h4>
+                      <p class="metric__body">A small set of practical examples others can learn from, and stronger shared foundations for teams building AI-enabled capabilities.</p>
+                    </article>
+                  </div>
+                </div>
+                <div class="success__panel" data-panel="signal">
+                  <div class="metrics">
+                    <article class="metric">
+                      <span class="metric__label">Group</span>
+                      <h4 class="metric__headline">The right people show up</h4>
+                      <p class="metric__body">The right people are in the Group — trusted, cross-functional, close enough to the work.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Bootcamp</span>
+                      <h4 class="metric__headline">Movement, not awareness</h4>
+                      <p class="metric__body">The Bootcamp creates visible movement across the CEED UX group — not just awareness.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Pods</span>
+                      <h4 class="metric__headline">Useful examples emerge</h4>
+                      <p class="metric__body">Pods produce useful examples and lessons others can build on.</p>
+                    </article>
+                    <article class="metric">
+                      <span class="metric__label">Loop</span>
+                      <h4 class="metric__headline">Learnings feed back fast</h4>
+                      <p class="metric__body">Learnings are being fed back into the model quickly — the loop is short.</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══ SLIDE 12 — Discussion ═══ -->
+        <section class="slide slide--discussion" data-slide="12" data-section="outcomes">
+          <div class="slide__inner">
+            <header class="slide-head">
+              <span class="eyebrow reveal" style="--d: 0ms">04 · Outcomes</span>
+              <h2 class="statement reveal" style="--d: 120ms">
+                <em>Open questions</em> / next decisions.
+              </h2>
+              <p class="statement__sub reveal" style="--d: 260ms">
+                A handful of questions I&rsquo;d rather we answer together than pretend to have figured out. Click any to expand.
+              </p>
+            </header>
+            <div class="accordion reveal" style="--d: 400ms" data-accordion>
+              <button class="acc" data-acc="1" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q1</span>
+                  <span class="acc__title">Is this the right initial shape?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>Three legs, a readiness layer underneath, CEED-initiated with selected adjacent participation — before we tune the details, does the overall shape feel right?</p>
+                </div>
+              </button>
+              <button class="acc" data-acc="2" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q2</span>
+                  <span class="acc__title">Who should be in the first AI Experience &amp; Enablement Group?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>Membership is the first real decision — who we include signals what the Group is, and who we leave out shapes how it lands.</p>
+                </div>
+              </button>
+              <button class="acc" data-acc="3" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q3</span>
+                  <span class="acc__title">How should the Group and a possible AI UX Chapter complement each other?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>An AI UX Chapter is a design-led community focused on UX vision, craft standards, and maturity — it is not cross-functional by design. The Group is the cross-functional practical layer where design, product and engineering align on what good looks like in shipped work. The two complement each other; neither replaces the other. Worth agreeing how they sit next to each other before the Group runs its first session.</p>
+                </div>
+              </button>
+              <button class="acc" data-acc="4" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q4</span>
+                  <span class="acc__title">Should the first Bootcamp stay fully inside CEED UX?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>Starting inside CEED UX keeps it practical and grounded, but we should be explicit about whether we&rsquo;re opening it up later — and when.</p>
+                </div>
+              </button>
+              <button class="acc" data-acc="5" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q5</span>
+                  <span class="acc__title">Which 1–2 initiatives are best suited as first pod / pilot candidates?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>AI CE Big Bet, SFDC Seismic 90-day POC, Lumina intake agents, AI Hub — useful anchor points, but other work in motion may prove equally or more suitable.</p>
+                </div>
+              </button>
+              <button class="acc" data-acc="6" aria-expanded="false">
+                <div class="acc__row">
+                  <span class="acc__num">Q6</span>
+                  <span class="acc__title">How should LearningPath plug in?</span>
+                  <span class="acc__chev" aria-hidden="true">+</span>
+                </div>
+                <div class="acc__fold">
+                  <p>A dedicated session on how LearningPath could support the readiness layer — self- and manager assessment, gap visibility, baseline vs. advanced routing.</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
