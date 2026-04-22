@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in — AI Experience & Enablement Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f2f1ed;
+      --surface: #ffffff;
+      --ink: #26251e;
+      --ink-3: rgba(38, 37, 30, 0.55);
+      --ink-4: rgba(38, 37, 30, 0.40);
+      --line: rgba(38, 37, 30, 0.10);
+      --line-2: rgba(38, 37, 30, 0.20);
+      --accent: #f54e00;
+      --accent-deep: #d94000;
+      --error: #cf2d56;
+      --sans: "Geist", system-ui, -apple-system, Arial, sans-serif;
+      --mono: "Geist Mono", ui-monospace, "Roboto Mono", Menlo, monospace;
+      --shadow-card: rgba(0,0,0,0.14) 0px 28px 70px 0px, rgba(0,0,0,0.10) 0px 14px 32px 0px, rgba(38,37,30,0.10) 0px 0px 0px 1px;
+      --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-feature-settings: "liga" 1;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 360px;
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 36px 32px 32px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand__mark {
+      width: 14px;
+      height: 14px;
+      background: var(--ink);
+      border-radius: 3px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .brand__mark::after {
+      content: "";
+      position: absolute;
+      inset: 4px;
+      background: var(--surface);
+      border-radius: 1px;
+    }
+
+    .brand__name {
+      font-size: 12px;
+      color: var(--ink-3);
+      letter-spacing: 0.02em;
+    }
+
+    .card__head {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card__title {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.4px;
+      color: var(--ink);
+    }
+
+    .card__sub {
+      font-size: 13px;
+      color: var(--ink-3);
+      line-height: 1.5;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .input-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-3);
+      font-family: var(--mono);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--line-2);
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 180ms var(--ease), box-shadow 180ms var(--ease);
+    }
+    input[type="password"]::placeholder {
+      color: var(--ink-4);
+    }
+    input[type="password"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(245, 78, 0, 0.12);
+    }
+    input[type="password"].is-error {
+      border-color: var(--error);
+      box-shadow: 0 0 0 3px rgba(207, 45, 86, 0.10);
+    }
+
+    .error-msg {
+      font-size: 12px;
+      color: var(--error);
+      display: none;
+    }
+    .error-msg.is-visible { display: block; }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 11px 16px;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--paper);
+      background: var(--ink);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 180ms var(--ease), opacity 180ms var(--ease);
+      margin-top: 4px;
+    }
+    button[type="submit"]:hover { background: var(--accent); }
+    button[type="submit"]:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--ink-4);
+      font-family: var(--mono);
+      letter-spacing: 0.06em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="card">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <span class="brand__name">AI Programme · Internal</span>
+      </div>
+
+      <div class="card__head">
+        <h1 class="card__title">Access restricted</h1>
+        <p class="card__sub">Enter the password to view this deck.</p>
+      </div>
+
+      <form id="login-form" novalidate>
+        <div class="input-wrap">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+            required
+          />
+          <span class="error-msg" id="error-msg" role="alert">Incorrect password — try again.</span>
+        </div>
+        <button type="submit" id="submit-btn">Continue</button>
+      </form>
+
+      <p class="footer-note">Draft · v0.1 · April 2026</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('login-form')
+    const input = document.getElementById('password')
+    const errorMsg = document.getElementById('error-msg')
+    const btn = document.getElementById('submit-btn')
+
+    input.focus()
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      errorMsg.classList.remove('is-visible')
+      input.classList.remove('is-error')
+      btn.disabled = true
+      btn.textContent = 'Checking…'
+
+      try {
+        const res = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: input.value }),
+        })
+
+        if (res.ok) {
+          window.location.href = '/'
+        } else {
+          errorMsg.classList.add('is-visible')
+          input.classList.add('is-error')
+          input.value = ''
+          input.focus()
+          btn.disabled = false
+          btn.textContent = 'Continue'
+        }
+      } catch {
+        errorMsg.textContent = 'Something went wrong — please try again.'
+        errorMsg.classList.add('is-visible')
+        btn.disabled = false
+        btn.textContent = 'Continue'
+      }
+    })
+
+    input.addEventListener('input', () => {
+      if (input.classList.contains('is-error')) {
+        input.classList.remove('is-error')
+        errorMsg.classList.remove('is-visible')
+      }
+    })
+  </script>
+</body>
+</html>
