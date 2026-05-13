@@ -331,6 +331,10 @@
         <!-- ═══ SLIDE 6 — Leg 2: Bootcamp ═══ -->
         <section class="slide slide--leg" data-slide="6" data-section="programme" data-leg-slide="bootcamp">
           <div class="slide__inner">
+            <button class="deep-dive-trigger reveal" style="--d: 720ms" data-deep-dive-open aria-haspopup="dialog" aria-controls="dd-panel">
+              <span>Read in depth</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
             <header class="slide-head slide-head--leg">
               <span class="eyebrow reveal" style="--d: 0ms">02 · Programme <span class="top-nav__dot">·</span> Leg 02</span>
               <h2 class="statement reveal" style="--d: 120ms">
@@ -845,6 +849,182 @@
         </section>
 
       </main>
+
+      <!-- ───────────────────────────────────── DEEP DIVE DRAWER (slide 6) ──── -->
+      <div class="dd-backdrop" data-deep-dive-backdrop aria-hidden="true"></div>
+      <aside id="dd-panel" class="dd" data-deep-dive role="dialog" aria-modal="true" aria-labelledby="dd-title" aria-hidden="true">
+        <header class="dd__head">
+          <div class="dd__brand">
+            <span class="dd__eyebrow">Bootcamp · in depth</span>
+            <h3 id="dd-title">Six weeks, real cases, manager-ratified time.</h3>
+          </div>
+          <button class="dd__close" data-deep-dive-close aria-label="Close deep dive">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </header>
+
+        <nav class="dd__nav" aria-label="Drawer sections">
+          <a href="#dd-selection" class="dd__chip">Selection</a>
+          <a href="#dd-compact" class="dd__chip">The Compact</a>
+          <a href="#dd-weeks" class="dd__chip">Six weeks</a>
+          <a href="#dd-tiers" class="dd__chip">Tier placement</a>
+          <a href="#dd-signals" class="dd__chip">Signals</a>
+        </nav>
+
+        <div class="dd__body">
+
+          <section class="dd__section" id="dd-selection">
+            <h4>Selection</h4>
+            <p>Manager-nominated, paired with a 100-word self-statement from the nominee. Both required.</p>
+            <ul>
+              <li>No nomination without a statement — no statement without a nomination.</li>
+              <li>Manager commits to protecting 4–6 hrs/week in writing before the participant is confirmed.</li>
+              <li>Filters out the conscripted; creates a small investment moment.</li>
+              <li>Cohorts sized at 10–12 — enough for cross-spoke ties, small enough for debriefs to work.</li>
+              <li>Two cohorts run in sequence — Cohort 1 first, Cohort 2 follows; lessons sharpen the second pass.</li>
+            </ul>
+          </section>
+
+          <section class="dd__section" id="dd-compact">
+            <h4>The Compact</h4>
+            <p>A one-pager signed by participant, manager, and facilitator before Week 0. Six commitments:</p>
+            <ul>
+              <li><strong>Time.</strong> 4–6 hrs/week for six active weeks. Manager-protected.</li>
+              <li><strong>Deliverables.</strong> Six weekly submissions. Missing two in a row triggers a 1:1 and a continue-or-step-back conversation.</li>
+              <li><strong>Real work.</strong> The applied artefact is a real piece of the participant&rsquo;s product team work, not a sandbox exercise. The product team sees it.</li>
+              <li><strong>Confidentiality.</strong> What&rsquo;s said in debriefs stays in debriefs. Deliverables shared with manager and facilitator only.</li>
+              <li><strong>Placement.</strong> Tier placement is developmental, not a performance review input.</li>
+              <li><strong>Dropout.</strong> One free step-back to Cohort 2 if life intervenes. A second step-back ends eligibility this cycle.</li>
+            </ul>
+          </section>
+
+          <section class="dd__section" id="dd-weeks">
+            <h4>The six weeks</h4>
+            <p>Each active week follows the same shape — plenary, applied exercise in own work context, small-group debrief, deliverable. Anchor reading comes in mid-week and is kept short.</p>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 0</span>
+                <h5 class="dd-week__title">Kickoff (90 min, live)</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>Cohort meets. Tone is set. The Compact is signed in the room.</dd></div>
+                <div class="dd-week__row"><dt>Format</dt><dd>Six 15-min blocks — framing, cohort intros, TA intros, walkthrough, buddy pairing, Compact signing.</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>Signed Compact and a confirmed buddy pair across spokes.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 1</span>
+                <h5 class="dd-week__title">Land the tools</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>Hands-on texture with Claude, Cursor, Figma Make. No theory.</dd></div>
+                <div class="dd-week__row"><dt>Plenary</dt><dd>One real task end-to-end across the three tools, narrating prompting decisions and leaving the wrong turns visible.</dd></div>
+                <div class="dd-week__row"><dt>Hands-on</dt><dd>Pick two of three — an audience-shifting summary in Claude; a brief-to-screen exercise in Figma Make; a component explanation and improvement suggestion in Cursor.</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>Two-paragraph reflection plus one chosen output you would defend.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 2</span>
+                <h5 class="dd-week__title">Production is no longer the bottleneck</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>Reframe what your job is when production is cheap.</dd></div>
+                <div class="dd-week__row"><dt>Plenary</dt><dd>Discussion-led. Anchored in Sziebert (<em>Kaizen of Context</em>) and Chaturvedi (<em>New Design Leverage</em>). Active question — what&rsquo;s the bottleneck in your sprint that AI doesn&rsquo;t touch?</dd></div>
+                <div class="dd-week__row"><dt>Hands-on</dt><dd>Identify a specific bottleneck in your current sprint. Redo one weekly recurring task with AI in the loop. Measure time and quality before vs. after.</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>Bottleneck statement plus a before/after note with rough time data.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 3</span>
+                <h5 class="dd-week__title">Where design happens now</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>The &ldquo;design process is dead&rdquo; debate, and what it means for your week.</dd></div>
+                <div class="dd-week__row"><dt>Plenary</dt><dd>Three-way debate — Wen&rsquo;s &ldquo;process is dead&rdquo;, Bjørnhaug&rsquo;s &ldquo;process relocates&rdquo;, NN/G&rsquo;s &ldquo;compressed, not dead&rdquo;. Participants take a side.</dd></div>
+                <div class="dd-week__row"><dt>Hands-on</dt><dd>Map your team&rsquo;s real design process — not the official Confluence diagram, the actual flow. Mark where AI could relocate a decision, and where it could make the decision worse.</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>Real-process map plus one redone artefact using the &ldquo;decision relocated&rdquo; frame.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 4</span>
+                <h5 class="dd-week__title">Teams, roles, and the new shapes</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>What &ldquo;designer&rdquo; means in 18 months. Aptitudes, not titles.</dd></div>
+                <div class="dd-week__row"><dt>Plenary</dt><dd>Cross-cutting view from Darmour, Reyes, Cyr, and the industry reports. Aptitudes 2×2 — judgment depth × build leverage. Contained counter-narrative debate.</dd></div>
+                <div class="dd-week__row"><dt>Hands-on</dt><dd>Write 250 words on your 18-month role. Then have one conversation with your manager about it. The most uncomfortable homework, and the highest-leverage.</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>250-word role-future note plus a one-paragraph manager-conversation reflection.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 5</span>
+                <h5 class="dd-week__title">Ship something real</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>Apply everything in your own product team. The proof.</dd></div>
+                <div class="dd-week__row"><dt>Plenary</dt><dd>Replaced with a 90-min mid-week working session. Participants bring their case; the cohort critiques in flight.</dd></div>
+                <div class="dd-week__row"><dt>Hands-on (4–6 hrs)</dt><dd>Pick one task from your current sprint. Do it with AI in the loop, end-to-end. The bar — &ldquo;I could put this in front of my PM and EM and defend it.&rdquo;</dd></div>
+                <div class="dd-week__row"><dt>Deliverable</dt><dd>Applied artefact plus one piece of real feedback from inside the product team plus a 100-word reflection.</dd></div>
+              </dl>
+            </article>
+
+            <article class="dd-week">
+              <header class="dd-week__head">
+                <span class="dd-week__num">Week 6</span>
+                <h5 class="dd-week__title">Showcase and placement</h5>
+              </header>
+              <dl>
+                <div class="dd-week__row"><dt>Focus</dt><dd>Land the readiness conversation. Earn the placement.</dd></div>
+                <div class="dd-week__row"><dt>Showcase</dt><dd>90 min. Each participant gets 5 min to show their applied artefact plus 1 min on &ldquo;what changed in how I work&rdquo;. Cross-cohort attendance encouraged.</dd></div>
+                <div class="dd-week__row"><dt>Placement</dt><dd>30-min 1:1 with manager and facilitator. Tier placement on the readiness scorecard.</dd></div>
+                <div class="dd-week__row"><dt>Follow-up</dt><dd>Same self-assessment scored again at Day 30. Did the gains stick? Captured as one data point per participant.</dd></div>
+              </dl>
+            </article>
+          </section>
+
+          <section class="dd__section" id="dd-tiers">
+            <h4>Tier placement</h4>
+            <p>Placement is decided in a 30-min 1:1 with the participant, their manager, and the facilitator. The conversation is developmental — here&rsquo;s where you are, here&rsquo;s what would move you up.</p>
+            <ul>
+              <li><strong>Explorer.</strong> Has the floor. Can use the tools. Hasn&rsquo;t yet shifted day-to-day workflow.</li>
+              <li><strong>Emerging.</strong> Has integrated AI into one or two recurring workflows.</li>
+              <li><strong>Accelerator-eligible.</strong> Could credibly serve as a champion in a future cohort.</li>
+              <li><strong>Advanced.</strong> Already operates at the highest tier. Rare for Bootcamp graduates, but possible.</li>
+            </ul>
+            <p class="dd__lede">What disqualifies a tier-up:</p>
+            <ul>
+              <li>Two missed deliverables without a stepped-back conversation.</li>
+              <li>Applied artefact was a sandbox or wasn&rsquo;t used.</li>
+              <li>No manager-conversation reflection from Week 4 — the structural shift didn&rsquo;t happen.</li>
+            </ul>
+          </section>
+
+          <section class="dd__section" id="dd-signals">
+            <h4>Signals the cohort worked</h4>
+            <p>Measured at Week 6 and again at Day 30.</p>
+            <ul>
+              <li>≥ 80% submit all six deliverables.</li>
+              <li>≥ 70% of applied artefacts referenced or used by the receiving product team within 30 days.</li>
+              <li>≥ 60% move up one tier on the readiness picture.</li>
+              <li>≥ 70% report one or more recurring workflow now AI-integrated.</li>
+              <li>≥ 4 graduates volunteer to TA the next cohort.</li>
+              <li>Manager &ldquo;would-nominate-again&rdquo; rate above 70%.</li>
+            </ul>
+          </section>
+
+        </div>
+      </aside>
 
     </div>
   </div>

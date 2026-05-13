@@ -386,3 +386,63 @@
     }, 120);
   });
 })();
+
+/* ─────────────────────────────────────────────────────────────────
+   Deep Dive Drawer (slide 6 — Bootcamp)
+   ───────────────────────────────────────────────────────────────── */
+(() => {
+  const drawer = document.querySelector("[data-deep-dive]");
+  const backdrop = document.querySelector("[data-deep-dive-backdrop]");
+  const triggers = document.querySelectorAll("[data-deep-dive-open]");
+  const closers = document.querySelectorAll("[data-deep-dive-close]");
+  const slide6 = document.querySelector('[data-slide="6"]');
+
+  if (!drawer || !backdrop) return;
+
+  function open() {
+    drawer.classList.add("is-open");
+    backdrop.classList.add("is-open");
+    drawer.setAttribute("aria-hidden", "false");
+    backdrop.setAttribute("aria-hidden", "false");
+    // Reset scroll to top each time we open
+    const body = drawer.querySelector(".dd__body");
+    if (body) body.scrollTop = 0;
+  }
+
+  function close() {
+    drawer.classList.remove("is-open");
+    backdrop.classList.remove("is-open");
+    drawer.setAttribute("aria-hidden", "true");
+    backdrop.setAttribute("aria-hidden", "true");
+  }
+
+  function isOpen() {
+    return drawer.classList.contains("is-open");
+  }
+
+  triggers.forEach((t) => t.addEventListener("click", open));
+  closers.forEach((c) => c.addEventListener("click", close));
+  backdrop.addEventListener("click", close);
+
+  // Intercept keys while open — ESC closes; arrows/space don't navigate slides
+  document.addEventListener("keydown", (e) => {
+    if (!isOpen()) return;
+    if (e.key === "Escape") {
+      e.stopPropagation();
+      close();
+      return;
+    }
+    const blocked = ["ArrowLeft", "ArrowRight", "PageUp", "PageDown", " ", "Home", "End"];
+    if (blocked.includes(e.key) || /^[1-9]$/.test(e.key)) {
+      e.stopPropagation();
+    }
+  }, true);
+
+  // Close drawer automatically when slide 6 is no longer active
+  if (slide6) {
+    const slideObserver = new MutationObserver(() => {
+      if (!slide6.classList.contains("is-active") && isOpen()) close();
+    });
+    slideObserver.observe(slide6, { attributes: true, attributeFilter: ["class"] });
+  }
+})();
